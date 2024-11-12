@@ -1,0 +1,9 @@
+body{
+  background:linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("./components/assets/bgImage6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  /* background-color:#CAD2C5; */
+}
