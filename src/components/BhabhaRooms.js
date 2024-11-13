@@ -1,6 +1,7 @@
 import React from 'react';
 import roomsinfo from "../Bhabha/BB.json";
 import RoomLabSection from './RoomLabSection';
+import { Link } from 'react-router-dom';
 
 function Bhabha() {
     const rooms = roomsinfo.Bhabha.rooms;
@@ -31,7 +32,7 @@ function Bhabha() {
                                             {Object.entries(day.slots).map(([time, slot]) => (
                                                 <li key={time}>
                                                     {time}: <strong>{slot.status}</strong> -
-                                                    {slot.status === "Occupied" ? ` ${slot.subject} by ${slot.teacher}` : " None"}
+                                                    {slot.status === "Occupied" ? ` ${slot.subject} by ${slot.teacher}` : <Link to="/book" className="btn btn-outline-dark btn-sm m-1">Book</Link>}
                                                 </li>
                                             ))}
                                         </ul>

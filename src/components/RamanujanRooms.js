@@ -1,6 +1,7 @@
 import React from 'react';
 import roomsinfo from "../Ramanujan/RJ.json";
 import RoomLabSection from './RoomLabSection';
+import { Link } from 'react-router-dom';
 
 function Ramanujan() {
     const rooms = roomsinfo.Ramanujan.rooms;
@@ -31,7 +32,7 @@ function Ramanujan() {
                                             {Object.entries(day.slots).map(([time, slot]) => (
                                                 <li key={time}>
                                                     {time}: <strong>{slot.status}</strong> -
-                                                    {slot.status === "Occupied" ? ` ${slot.subject} by ${slot.teacher}` : " None"}
+                                                    {slot.status === "Occupied" ? ` ${slot.subject} by ${slot.teacher}` : <Link to="/book" className="btn btn-outline-dark btn-sm m-1">Book</Link>}
                                                 </li>
                                             ))}
                                         </ul>
