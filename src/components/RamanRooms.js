@@ -6,7 +6,7 @@ function Raman() {
     const rooms = roomsinfo.Raman.rooms;
     return (
         <>
-            <RoomLabSection block_code="ab" />
+            <RoomLabSection block_code="rm" />
             <div className="accordion" id="accordionExample">
                 {rooms.map((room, index) => (
                     <div className="accordion-item" key={index}>

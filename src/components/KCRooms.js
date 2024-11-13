@@ -6,7 +6,7 @@ function KC() {
     const rooms = roomsinfo.KC.rooms;
     return (
         <>
-            <RoomLabSection block_code="ab" />
+            <RoomLabSection block_code="kc" />
             <div className="accordion" id="accordionExample">
                 {rooms.map((room, index) => (
                     <div className="accordion-item" key={index}>

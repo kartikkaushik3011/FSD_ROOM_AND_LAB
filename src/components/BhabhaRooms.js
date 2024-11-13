@@ -6,7 +6,7 @@ function Bhabha() {
     const rooms = roomsinfo.Bhabha.rooms;
     return (
         <>
-            <RoomLabSection block_code="ab" />
+            <RoomLabSection block_code="bb" />
             <div className="accordion" id="accordionExample">
                 {rooms.map((room, index) => (
                     <div className="accordion-item" key={index}>
